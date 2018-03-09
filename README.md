@@ -76,6 +76,13 @@ public:
 
 详细用法查看`test.cpp`文件。
 
+### 实现细节
+
+* 非线程安全。
+* `Any`类这里是自己实现的。实现参考祁 宇的《深入应用C++11：代码优化与工程级应用》一书。当然也可以使用`Boost`的`Any`库。
+* 实现了一个简单的单例`Singleton`。
+* 定义注册与发出事件的宏`REGISTER_EVENT`和`FIRE_EVENT`，方便使用。
+
 ### 要求
 
-* 需要支持`C++11`的编译器
+* 需要支持`C++11`的编译器。编译器支持情况可以看[这里](http://zh.cppreference.com/w/cpp/compiler_support)。
