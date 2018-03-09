@@ -31,11 +31,18 @@ public:
     }
 };
 
+void OnTest(TestEvent& event)
+{
+    std::cout << "From OnTest Function a = " << event.a << " b = " << event.b << std::endl;
+}
+
 
 int main()
 {
     SystemA a;
     SystemB b;
+
+    EventManager::GetSingleton().RegisterEvent(OnTest);
 
     TestEvent event{1, 2.5};
     FIRE_EVENT(event);

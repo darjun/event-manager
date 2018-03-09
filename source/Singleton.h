@@ -5,7 +5,7 @@ public:
     Singleton() {}
     ~Singleton() {}
 
-    static T& getSingleton()
+    static T& GetSingleton()
     {
         static T s_singleton;
         return s_singleton;

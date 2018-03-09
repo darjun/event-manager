@@ -57,7 +57,7 @@ private:
     std::unordered_multimap<const char*, Any> eventMap_;
 };
 
-#define REGISTER_EVENT(method, obj) EventManager::getSingleton().RegisterEvent(method, obj)
-#define FIRE_EVENT(event) EventManager::getSingleton().FireEvent(event);
+#define REGISTER_EVENT(method, obj) EventManager::GetSingleton().RegisterEvent(method, obj)
+#define FIRE_EVENT(event) EventManager::GetSingleton().FireEvent(event);
 
 #endif
