@@ -52,7 +52,7 @@ void KillMonster(Player* player, Monster* monster)
 }
 ```
 
-这个函数中的代码编写完成之后，今后不管什么功能需要这个事件，都需要再来修改这个函数了。新增系统的处理：
+这个函数中的代码编写完成之后，今后不管什么功能需要这个事件，都不需要再来修改这个函数了。新增系统的处理：
 ```
 // ActivityMgr.cpp
 class ActivityMgr
